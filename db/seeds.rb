@@ -22,7 +22,6 @@
     ssn: ssn,
     email: email
     )
-
 end
 
 
