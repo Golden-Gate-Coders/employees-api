@@ -8,4 +8,14 @@ class EmployeesController < ApplicationController
     @employee = Employee.find_by(id: params[:id])
   end
 
+  def create
+    @employee = Employee.create(
+        name: params[:name],
+        email: params[:email],
+        ssn: params[:ssn]
+      )
+
+    render :show
+  end
+
 end
